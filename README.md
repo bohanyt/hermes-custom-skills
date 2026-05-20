@@ -2,7 +2,7 @@
 
 Custom skills untuk [Hermes Agent](https://hermes-agent.nousresearch.com/docs) — dibuat oleh @bohan.
 
-## Daftar Skills (18 custom + scripts)
+## Daftar Skills (21 custom + scripts)
 
 ### Pipeline & Content Factory
 - **content-pipeline-builder** — Arsitektur multi-agent content pipeline
@@ -37,6 +37,11 @@ Custom skills untuk [Hermes Agent](https://hermes-agent.nousresearch.com/docs) �
 
 ### Enterprise
 - **browser-automation-enterprise** — M365/Teams browser automation
+
+### Security & Review (new)
+- **security-audit** — OWASP Top 10 + STRIDE security audit (from gstack /cso)
+- **retro** — Weekly engineering retrospective (from gstack /retro)
+- **ship** — End-to-end shipping workflow, auto PR (from gstack /ship)
 
 ## Struktur Folder
 
