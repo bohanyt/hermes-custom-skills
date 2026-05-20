@@ -1,0 +1,2032 @@
+{
+  "version": "1.2",
+  "created": "2026-05-17",
+  "last_updated": "2026-05-20T13:05:09.432426+00:00",
+  "total_sessions": 17,
+  "total_concepts": 15,
+  "total_decisions": 6,
+  "total_people": 1,
+  "agents": [
+    "hermes",
+    "kiro",
+    "gemma-4",
+    "copilot-m365"
+  ],
+  "sessions": [
+    {
+      "file": "sessions/20260513-01-first-contact.md",
+      "date": "2026-05-13",
+      "model": "models/gemma-4-31b-it",
+      "platform": "discord",
+      "topics": [
+        "first-contact"
+      ]
+    },
+    {
+      "file": "sessions/20260514-aionui-troubleshooting.md",
+      "date": "2026-05-14",
+      "model": "openrouter/owl-alpha",
+      "platform": "cli",
+      "topics": [
+        "aionui",
+        "troubleshooting",
+        "multi-session"
+      ]
+    },
+    {
+      "file": "sessions/20260515-17-copilot-automation-hermes-desktop.md",
+      "date": "2026-05-15",
+      "model": "openrouter/owl-alpha",
+      "platform": "tui",
+      "topics": [
+        "copilot-m365",
+        "playwright",
+        "hermes-desktop"
+      ]
+    },
+    {
+      "file": "sessions/20260515-17-copilot-cloakbrowser.md",
+      "date": "2026-05-15",
+      "model": "openrouter/owl-alpha",
+      "platform": "tui",
+      "topics": [
+        "copilot-m365",
+        "cloakbrowser"
+      ]
+    },
+    {
+      "file": "sessions/20260515-discord-connection-test.md",
+      "date": "2026-05-15",
+      "model": "openrouter/owl-alpha",
+      "platform": "discord",
+      "topics": [
+        "discord",
+        "connection"
+      ]
+    },
+    {
+      "file": "sessions/20260515-whatsapp-setup.md",
+      "date": "2026-05-15",
+      "model": "openrouter/owl-alpha",
+      "platform": "cli",
+      "topics": [
+        "whatsapp",
+        "setup"
+      ]
+    },
+    {
+      "file": "sessions/20260516-17-live2video-pipeline-v1.2.md",
+      "date": "2026-05-16",
+      "model": "openrouter/owl-alpha",
+      "platform": "tui",
+      "topics": [
+        "live2video",
+        "pipeline"
+      ]
+    },
+    {
+      "file": "sessions/20260516-hermes-desktop-setup.md",
+      "date": "2026-05-16",
+      "model": "openrouter/owl-alpha",
+      "platform": "tui",
+      "topics": [
+        "hermes-desktop",
+        "lm-studio",
+        "setup"
+      ]
+    },
+    {
+      "file": "sessions/20260516-misc-testing.md",
+      "date": "2026-05-16",
+      "model": "openrouter/owl-alpha",
+      "platform": "tui",
+      "topics": [
+        "testing",
+        "misc"
+      ]
+    },
+    {
+      "file": "sessions/20260517-hermes-web-ui-dashboard.md",
+      "date": "2026-05-17",
+      "model": "openrouter/owl-alpha",
+      "platform": "tui",
+      "topics": [
+        "hermes-web-ui",
+        "dashboard"
+      ]
+    },
+    {
+      "file": "sessions/20260517-obsidian-wiki-hermes-update.md",
+      "date": "2026-05-17",
+      "model": "openrouter/owl-alpha",
+      "platform": "tui",
+      "topics": [
+        "obsidian-wiki",
+        "hermes-update"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault-setup.md",
+      "date": "2026-05-17",
+      "model": "openrouter/owl-alpha",
+      "platform": "cli",
+      "topics": [
+        "vault",
+        "architecture",
+        "seo-memory"
+      ]
+    },
+    {
+      "file": "sessions/20260518-cloudflare-tunnel-hermes-remote.md",
+      "date": "2026-05-18",
+      "model": "openrouter/owl-alpha",
+      "platform": "discord",
+      "topics": [
+        "cloudflare-tunnel",
+        "remote-access"
+      ]
+    },
+    {
+      "file": "sessions/20260518-live2video-v1.3-final.md",
+      "date": "2026-05-18",
+      "model": "openrouter/owl-alpha",
+      "platform": "cli",
+      "topics": [
+        "live2video",
+        "v1.3",
+        "5c",
+        "long-form"
+      ]
+    },
+    {
+      "file": "sessions/20260518-vault-audit-repair.md",
+      "date": "2026-05-18",
+      "model": "openrouter/owl-alpha",
+      "platform": "cli",
+      "topics": [
+        "vault",
+        "audit",
+        "repair",
+        "skills",
+        "cron"
+      ]
+    },
+    {
+      "file": "sessions/20260518-skills-enrichment.md",
+      "date": "2026-05-18",
+      "model": "openrouter/owl-alpha",
+      "platform": "cli",
+      "topics": [
+        "skills",
+        "enrichment"
+      ]
+    },
+    {
+      "file": "sessions/20260519-kiro-4agent-architecture.md",
+      "date": "2026-05-19",
+      "model": "openrouter/owl-alpha",
+      "platform": "cli",
+      "topics": [
+        "kiro",
+        "gemma-4",
+        "copilot-m365",
+        "multi-agent",
+        "security",
+        "architecture"
+      ]
+    },
+    {
+      "file": "sessions/20260513--assistant-rules---you-must-follow-these-instructi.md",
+      "date": "2026-05-13",
+      "session_id": "session_faf613c3-10b5-42d9-862d-5a1a154a3ca7",
+      "topics": [
+        "skill",
+        "skills",
+        "aionui",
+        "users",
+        "builtin"
+      ]
+    },
+    {
+      "file": "sessions/20260514--assistant-rules---you-must-follow-these-instructi.md",
+      "date": "2026-05-14",
+      "session_id": "session_257a78ce-d763-413d-8626-875ba55785b4",
+      "topics": [
+        "enggak",
+        "kayak",
+        "banget",
+        "keren",
+        "skill"
+      ]
+    },
+    {
+      "file": "sessions/20260514--assistant-rules---you-must-follow-these-instructi.md",
+      "date": "2026-05-14",
+      "session_id": "session_f989184f-9733-48c2-b500-981ca027265d",
+      "topics": [
+        "skill",
+        "video",
+        "skills",
+        "create",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260514--assistant-rules---you-must-follow-these-instructi.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_075548_e97328",
+      "topics": [
+        "skill",
+        "skills",
+        "video",
+        "create",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260514--assistant-rules---you-must-follow-these-instructi.md",
+      "date": "2026-05-14",
+      "session_id": "session_41074997-b756-47e7-b8c1-40a4d2b9006b",
+      "topics": [
+        "users",
+        "documents",
+        "print",
+        "output",
+        "video"
+      ]
+    },
+    {
+      "file": "sessions/20260514--assistant-rules---you-must-follow-these-instructi.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_081236_82433b",
+      "topics": [
+        "description",
+        "category",
+        "skill",
+        "users",
+        "documents"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_082620_06bece",
+      "topics": [
+        "hermes",
+        "false",
+        "provider",
+        "model",
+        "terminal"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_083636_de88e5",
+      "topics": [
+        "hermes",
+        "users",
+        "nhermes",
+        "agent",
+        "documents"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_085509_2e3068",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "process",
+        "check"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_090128_1d6118",
+      "topics": [
+        "users",
+        "commandnotfoundexception",
+        "hermes",
+        "process",
+        "script"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_091920_0be788",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "process",
+        "script"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_092927_661bd0",
+      "topics": [
+        "users",
+        "commandnotfoundexception",
+        "hermes",
+        "script",
+        "documents"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_094653_d4c48f",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "script",
+        "documents"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_094552_ee2b7c",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "script",
+        "agent"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_101205_67739e",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "script",
+        "agent"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_101721_5660b8",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "script",
+        "model"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_104054_586b73",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "model",
+        "script"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_104644_904f13",
+      "topics": [
+        "users",
+        "hermes",
+        "model",
+        "commandnotfoundexception",
+        "script"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_112036_116108",
+      "topics": [
+        "users",
+        "hermes",
+        "model",
+        "commandnotfoundexception",
+        "script"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_113100_e455bb",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "model",
+        "script"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_122637_26c32d",
+      "topics": [
+        "users",
+        "hermes",
+        "model",
+        "commandnotfoundexception",
+        "script"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_130411_bc01d0",
+      "topics": [
+        "users",
+        "hermes",
+        "commandnotfoundexception",
+        "model",
+        "video"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_125749_b80e1c",
+      "topics": [
+        "users",
+        "hermes",
+        "model",
+        "commandnotfoundexception",
+        "video"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_134044_0c0f19",
+      "topics": [
+        "users",
+        "hermes",
+        "video",
+        "print",
+        "model"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_141846_b45a07",
+      "topics": [
+        "users",
+        "hermes",
+        "video",
+        "print",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_151047_5da3f6",
+      "topics": [
+        "users",
+        "hermes",
+        "video",
+        "print",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_080313_45302b",
+      "topics": [
+        "users",
+        "hermes",
+        "video",
+        "print",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_164804_cb77b4",
+      "topics": [
+        "chunks",
+        "summary",
+        "content",
+        "users",
+        "documents"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_172148_cfbf8d",
+      "topics": [
+        "chunks",
+        "content",
+        "users",
+        "documents",
+        "summary"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_185312_fa4b5e",
+      "topics": [
+        "chunks",
+        "content",
+        "users",
+        "status",
+        "documents"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_193558_190ce1",
+      "topics": [
+        "chunks",
+        "content",
+        "users",
+        "documents",
+        "status"
+      ]
+    },
+    {
+      "file": "sessions/20260514-kamu-dibekalin-tool-ga-.md",
+      "date": "2026-05-14",
+      "session_id": "session_20260514_220110_4f5ee2",
+      "topics": [
+        "chunks",
+        "content",
+        "users",
+        "video",
+        "documents"
+      ]
+    },
+    {
+      "file": "sessions/20260515--bohan--tes-kamu-nyala-.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_045228_993abbf4",
+      "topics": [
+        "kalau",
+        "terminal",
+        "whatsapp",
+        "nggak",
+        "conversation"
+      ]
+    },
+    {
+      "file": "sessions/20260515-aku-liat-di-html-soal-projek-kita--c--users-msi-th.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_050241_238bd6",
+      "topics": [
+        "chunks",
+        "users",
+        "documents",
+        "content",
+        "status"
+      ]
+    },
+    {
+      "file": "sessions/20260515-aku-liat-di-html-soal-projek-kita--c--users-msi-th.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_052451_439848",
+      "topics": [
+        "chunks",
+        "users",
+        "content",
+        "documents",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260515-aku-liat-di-html-soal-projek-kita--c--users-msi-th.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_064210_6f48de",
+      "topics": [
+        "chunks",
+        "users",
+        "documents",
+        "output",
+        "content"
+      ]
+    },
+    {
+      "file": "sessions/20260515--bohan--tes-kamu-nyala-.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_073419_76d3df66",
+      "topics": [
+        "hermes",
+        "agent",
+        "users",
+        "local",
+        "appdata"
+      ]
+    },
+    {
+      "file": "sessions/20260515--bohan--menurut-kamu-ada-yg-perlu-dibetulin-ga-.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_111308_9b353490",
+      "topics": [
+        "video",
+        "chunks",
+        "output",
+        "status",
+        "topic"
+      ]
+    },
+    {
+      "file": "sessions/20260515--bohan--menurut-kamu-ada-yg-perlu-dibetulin-ga-.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_121453_696d87",
+      "topics": [
+        "video",
+        "pipeline",
+        "content",
+        "description",
+        "chunks"
+      ]
+    },
+    {
+      "file": "sessions/20260515-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_192028_c55b61",
+      "topics": [
+        "browser",
+        "cloakbrowser",
+        "copilot",
+        "playwright",
+        "https"
+      ]
+    },
+    {
+      "file": "sessions/20260515-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_195540_f2100e",
+      "topics": [
+        "hermes",
+        "copilot",
+        "browser",
+        "cloakbrowser",
+        "https"
+      ]
+    },
+    {
+      "file": "sessions/20260515-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-15",
+      "session_id": "session_20260515_211817_a1c10d",
+      "topics": [
+        "hermes",
+        "copilot",
+        "browser",
+        "cloakbrowser",
+        "https"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_055701_f2c3b4",
+      "topics": [
+        "hermes",
+        "browser",
+        "description",
+        "copilot",
+        "cloakbrowser"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_070153_03f116",
+      "topics": [
+        "hermes",
+        "browser",
+        "copilot",
+        "cloakbrowser",
+        "https"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_074620_6f1cf8",
+      "topics": [
+        "hermes",
+        "browser",
+        "https",
+        "copilot",
+        "default"
+      ]
+    },
+    {
+      "file": "sessions/20260516-tes-kamu-nyala-.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_080203_0958bc",
+      "topics": [
+        "skill",
+        "copilot",
+        "halaman",
+        "browser",
+        "apakah"
+      ]
+    },
+    {
+      "file": "sessions/20260516-tes-kamu-nyala-.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_080313_1376c7",
+      "topics": [
+        "copilot",
+        "halaman",
+        "snapshot",
+        "microsoft",
+        "browser"
+      ]
+    },
+    {
+      "file": "sessions/20260516-tes-kamu-nyala-.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_074919_24fdcc",
+      "topics": [
+        "halaman",
+        "copilot",
+        "snapshot",
+        "apakah",
+        "ingin"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_080250_e7f174",
+      "topics": [
+        "hermes",
+        "browser",
+        "copilot",
+        "https",
+        "default"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_080545_e7cc36",
+      "topics": [
+        "hermes",
+        "browser",
+        "copilot",
+        "https",
+        "default"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_081500_eecdbc",
+      "topics": [
+        "hermes",
+        "browser",
+        "copilot",
+        "https",
+        "default"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_083819_19338c",
+      "topics": [
+        "hermes",
+        "copilot",
+        "browser",
+        "https",
+        "default"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_083253_a5839f",
+      "topics": [
+        "hermes",
+        "copilot",
+        "browser",
+        "https",
+        "description"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_091547_868e7a",
+      "topics": [
+        "hermes",
+        "browser",
+        "copilot",
+        "https",
+        "description"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_095700_878c38",
+      "topics": [
+        "scriptor",
+        "class",
+        "hermes",
+        "copilot",
+        "browser"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_095404_fc824f",
+      "topics": [
+        "scriptor",
+        "class",
+        "hermes",
+        "browser",
+        "copilot"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_101951_0729e5",
+      "topics": [
+        "scriptor",
+        "class",
+        "hermes",
+        "browser",
+        "copilot"
+      ]
+    },
+    {
+      "file": "sessions/20260516-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_104440_e27c9b",
+      "topics": [
+        "scriptor",
+        "class",
+        "hermes",
+        "browser",
+        "copilot"
+      ]
+    },
+    {
+      "file": "sessions/20260516-aku-liat-di-html-soal-projek-kita--c--users-msi-th.md",
+      "date": "2026-05-16",
+      "session_id": "session_20260516_194454_0d4c87",
+      "topics": [
+        "chunks",
+        "users",
+        "documents",
+        "output",
+        "content"
+      ]
+    },
+    {
+      "file": "sessions/20260517-aku-liat-di-html-soal-projek-kita--c--users-msi-th.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_045609_bd4738",
+      "topics": [
+        "chunks",
+        "users",
+        "documents",
+        "output",
+        "status"
+      ]
+    },
+    {
+      "file": "sessions/20260517-aku-liat-di-html-soal-projek-kita--c--users-msi-th.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_064116_d20e7a",
+      "topics": [
+        "chunks",
+        "users",
+        "documents",
+        "error",
+        "reaction"
+      ]
+    },
+    {
+      "file": "sessions/20260517-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_065512_af9eef",
+      "topics": [
+        "scriptor",
+        "class",
+        "hermes",
+        "browser",
+        "copilot"
+      ]
+    },
+    {
+      "file": "sessions/20260517-aku-liat-di-html-soal-projek-kita--c--users-msi-th.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_072358_13faf9",
+      "topics": [
+        "chunks",
+        "users",
+        "documents",
+        "error",
+        "reaction"
+      ]
+    },
+    {
+      "file": "sessions/20260517-aku-liat-di-html-soal-projek-kita--c--users-msi-th.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260514_151941_53c8b5",
+      "topics": [
+        "chunks",
+        "users",
+        "documents",
+        "error",
+        "reaction"
+      ]
+    },
+    {
+      "file": "sessions/20260517-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260515_182711_f2f3dc",
+      "topics": [
+        "scriptor",
+        "class",
+        "hermes",
+        "browser",
+        "copilot"
+      ]
+    },
+    {
+      "file": "sessions/20260517-soal-cloak-browser--misal-aku-mau--manfaatin--copi.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_080634_ca6091",
+      "topics": [
+        "scriptor",
+        "class",
+        "hermes",
+        "browser",
+        "copilot"
+      ]
+    },
+    {
+      "file": "sessions/20260517-update-hermes-agent--gimana-tuh--dan-soal-https---.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_081135_d6d939",
+      "topics": [
+        "class",
+        "skills",
+        "strong",
+        "hermes",
+        "topic"
+      ]
+    },
+    {
+      "file": "sessions/20260517-update-hermes-agent--gimana-tuh--dan-soal-https---.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_082609_d59cc5",
+      "topics": [
+        "hermes",
+        "skills",
+        "class",
+        "agent",
+        "topic"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_093701_4a966e",
+      "topics": [
+        "skills",
+        "ingest",
+        "hermes",
+        "vault",
+        "obsidian"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_101529_dd8116",
+      "topics": [
+        "vault",
+        "skills",
+        "ingest",
+        "hermes",
+        "setup"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_102333_35c075",
+      "topics": [
+        "description",
+        "hermes",
+        "skills",
+        "vault",
+        "skill"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_110322_767eb1",
+      "topics": [
+        "level",
+        "listitem",
+        "vault",
+        "description",
+        "hermes"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_122625_013605",
+      "topics": [
+        "vault",
+        "hermes",
+        "level",
+        "listitem",
+        "skills"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_132345_d863b4",
+      "topics": [
+        "vault",
+        "hermes",
+        "level",
+        "listitem",
+        "model"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_133734_5cc347",
+      "topics": [
+        "vault",
+        "hermes",
+        "level",
+        "listitem",
+        "model"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_153648_a778d7",
+      "topics": [
+        "hermes",
+        "vault",
+        "level",
+        "listitem",
+        "model"
+      ]
+    },
+    {
+      "file": "sessions/20260517-tes-kamu-nyala-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_090851_060c8d",
+      "topics": [
+        "hermes",
+        "vault",
+        "level",
+        "listitem",
+        "model"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault2--apa-yang-kamu-tau-soal-wiki-kita-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_165137_810f93",
+      "topics": [
+        "description",
+        "hermes",
+        "string",
+        "sessions",
+        "content"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault2--apa-yang-kamu-tau-soal-wiki-kita-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_175302_9bf494",
+      "topics": [
+        "description",
+        "hermes",
+        "sessions",
+        "string",
+        "session"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault2--apa-yang-kamu-tau-soal-wiki-kita-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_181330_c03adf",
+      "topics": [
+        "hermes",
+        "sessions",
+        "session",
+        "description",
+        "vault"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault2--apa-yang-kamu-tau-soal-wiki-kita-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_185851_a116d3",
+      "topics": [
+        "hermes",
+        "sessions",
+        "session",
+        "description",
+        "vault"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault2--apa-yang-kamu-tau-soal-wiki-kita-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_191924_a2994a",
+      "topics": [
+        "hermes",
+        "session",
+        "sessions",
+        "description",
+        "vault"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault2--apa-yang-kamu-tau-soal-wiki-kita-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_200438_787cb4",
+      "topics": [
+        "hermes",
+        "sessions",
+        "session",
+        "vault",
+        "description"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault2--apa-yang-kamu-tau-soal-wiki-kita-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_204504_fad53b",
+      "topics": [
+        "hermes",
+        "sessions",
+        "session",
+        "vault",
+        "description"
+      ]
+    },
+    {
+      "file": "sessions/20260517-vault2--apa-yang-kamu-tau-soal-wiki-kita-.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_163025_9c2c63",
+      "topics": [
+        "hermes",
+        "sessions",
+        "session",
+        "vault",
+        "users"
+      ]
+    },
+    {
+      "file": "sessions/20260517-laptop-kantor-bantu-siapin-buat-setup--kalau-ingat.md",
+      "date": "2026-05-17",
+      "session_id": "session_20260517_234715_c939e7",
+      "topics": [
+        "statictext",
+        "hermes",
+        "generic",
+        "level",
+        "agent"
+      ]
+    },
+    {
+      "file": "sessions/20260518-laptop-kantor-bantu-siapin-buat-setup--kalau-ingat.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260517_233528_84bcf2",
+      "topics": [
+        "statictext",
+        "generic",
+        "level",
+        "listitem",
+        "button"
+      ]
+    },
+    {
+      "file": "sessions/20260518-live2video-part-3-kali---jadi-kan-terakhir-kali-ki.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_022514_020a94",
+      "topics": [
+        "testing",
+        "documents",
+        "video",
+        "bikin",
+        "users"
+      ]
+    },
+    {
+      "file": "sessions/20260518-live2video-part-3-kali---jadi-kan-terakhir-kali-ki.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_030538_09661b",
+      "topics": [
+        "testing",
+        "documents",
+        "video",
+        "users",
+        "bikin"
+      ]
+    },
+    {
+      "file": "sessions/20260518-live2video-part-3-kali---jadi-kan-terakhir-kali-ki.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_033808_7282d4",
+      "topics": [
+        "testing",
+        "documents",
+        "users",
+        "video",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260518--bohan--soal-cara-pasang-biar-web-ui-hermes-bisa-k.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_063119_3b4574",
+      "topics": [
+        "hermes",
+        "nhermes",
+        "agent",
+        "config",
+        "session"
+      ]
+    },
+    {
+      "file": "sessions/20260518--bohan--soal-cara-pasang-biar-web-ui-hermes-bisa-k.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_061437_f2e056d3",
+      "topics": [
+        "tunnel",
+        "cloudflare",
+        "hermes",
+        "false",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260518--bohan--soal-cara-pasang-biar-web-ui-hermes-bisa-k.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_103753_992adc",
+      "topics": [
+        "tunnel",
+        "cloudflare",
+        "hermes",
+        "false",
+        "error"
+      ]
+    },
+    {
+      "file": "sessions/20260518--important--the-following-skill-s--were-listed-for.md",
+      "date": "2026-05-18",
+      "session_id": "session_cron_577b3b8659e7_20260518_180522",
+      "topics": [
+        "hermes",
+        "sessions",
+        "users",
+        "messages",
+        "vault"
+      ]
+    },
+    {
+      "file": "sessions/20260518-live2video-part-3-kali---jadi-kan-terakhir-kali-ki.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_204128_4d1236",
+      "topics": [
+        "documents",
+        "users",
+        "testing",
+        "video",
+        "output"
+      ]
+    },
+    {
+      "file": "sessions/20260518-live2video-part-3-kali---jadi-kan-terakhir-kali-ki.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_001332_0a5f19",
+      "topics": [
+        "documents",
+        "users",
+        "testing",
+        "output",
+        "video"
+      ]
+    },
+    {
+      "file": "sessions/20260518-audit-hermes-vault-dan-skill-buat-menyimpan-long-t.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_213332_7575f6",
+      "topics": [
+        "vault",
+        "hermes",
+        "sessions",
+        "session",
+        "users"
+      ]
+    },
+    {
+      "file": "sessions/20260518-audit-hermes-vault-dan-skill-buat-menyimpan-long-t.md",
+      "date": "2026-05-18",
+      "session_id": "session_20260518_205144_df9b4c",
+      "topics": [
+        "vault",
+        "hermes",
+        "sessions",
+        "session",
+        "users"
+      ]
+    },
+    {
+      "file": "sessions/20260519-skills-enrichment--oke--i-know-kamu-udah-lumayan-p.md",
+      "date": "2026-05-19",
+      "session_id": "session_20260518_215947_29bccc",
+      "topics": [
+        "skills",
+        "level",
+        "listitem",
+        "tests",
+        "skill"
+      ]
+    },
+    {
+      "file": "sessions/20260519-skills-buat-dikasih-ke-kiro--aku-punya-https---kir.md",
+      "date": "2026-05-19",
+      "session_id": "session_20260519_051440_071105",
+      "topics": [
+        "hermes",
+        "class",
+        "vault",
+        "border",
+        "description"
+      ]
+    },
+    {
+      "file": "sessions/20260519-lanjut-hermes_live2video--c--users-msi-thin-15-doc.md",
+      "date": "2026-05-19",
+      "session_id": "session_20260519_211005_0ee8c0",
+      "topics": [
+        "score",
+        "chunk",
+        "storytime",
+        "enggak",
+        "keywords"
+      ]
+    },
+    {
+      "file": "sessions/20260519-lanjut-hermes_live2video--c--users-msi-thin-15-doc.md",
+      "date": "2026-05-19",
+      "session_id": "session_20260519_213309_2ac04f",
+      "topics": [
+        "score",
+        "label",
+        "chunk",
+        "storytime",
+        "ratio"
+      ]
+    },
+    {
+      "file": "sessions/20260520-lanjut-hermes_live2video--c--users-msi-thin-15-doc.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_051808_5ea3b1",
+      "topics": [
+        "score",
+        "label",
+        "chunk",
+        "enggak",
+        "ratio"
+      ]
+    },
+    {
+      "file": "sessions/20260520-lanjut-hermes_live2video--c--users-msi-thin-15-doc.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260519_200643_2abe4e",
+      "topics": [
+        "score",
+        "label",
+        "chunk",
+        "storytime",
+        "chunks"
+      ]
+    },
+    {
+      "file": "sessions/20260520-biar-beda-sesi-beda-api--gimana-cara-biar-aku-bisa.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_083322_3ccf28",
+      "topics": [
+        "hermes",
+        "session",
+        "terminal",
+        "skill",
+        "instance"
+      ]
+    },
+    {
+      "file": "sessions/20260520-biar-beda-sesi-beda-api--gimana-cara-biar-aku-bisa.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_084639_047095",
+      "topics": [
+        "hermes",
+        "session",
+        "terminal",
+        "vault",
+        "skill"
+      ]
+    },
+    {
+      "file": "sessions/20260520-biar-beda-sesi-beda-api--gimana-cara-biar-aku-bisa.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_100733_a26fc2",
+      "topics": [
+        "hermes",
+        "terminal",
+        "session",
+        "bikin",
+        "multi"
+      ]
+    },
+    {
+      "file": "sessions/20260520-list-skills-hermes-sekarang--hermes-ini-punya-skil.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_095721_bcdd70",
+      "topics": [
+        "hermes",
+        "skills",
+        "local",
+        "appdata",
+        "nbasename"
+      ]
+    },
+    {
+      "file": "sessions/20260520-biar-beda-sesi-beda-api--gimana-cara-biar-aku-bisa.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_103241_5de955",
+      "topics": [
+        "hermes",
+        "session",
+        "terminal",
+        "users",
+        "local"
+      ]
+    },
+    {
+      "file": "sessions/20260520-biar-beda-sesi-beda-api--gimana-cara-biar-aku-bisa.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_074253_4a8ec6",
+      "topics": [
+        "hermes",
+        "session",
+        "terminal",
+        "users",
+        "sessions"
+      ]
+    },
+    {
+      "file": "sessions/20260520-skills-yang-udah-dibuat--bukan-bawaan-dari-hermes-.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_113955_c0b77d",
+      "topics": [
+        "hermes",
+        "session",
+        "skills",
+        "vault",
+        "skill"
+      ]
+    },
+    {
+      "file": "sessions/20260520-skills-yang-udah-dibuat--bukan-bawaan-dari-hermes-.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_120626_e6cd7e",
+      "topics": [
+        "hermes",
+        "skill",
+        "skills",
+        "pipeline",
+        "users"
+      ]
+    },
+    {
+      "file": "sessions/20260520-skills-yang-udah-dibuat--bukan-bawaan-dari-hermes-.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_123046_762275",
+      "topics": [
+        "hermes",
+        "skill",
+        "skills",
+        "users",
+        "local"
+      ]
+    },
+    {
+      "file": "sessions/20260520-skills-yang-udah-dibuat--bukan-bawaan-dari-hermes-.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_174146_c365b5",
+      "topics": [
+        "hermes",
+        "skills",
+        "skill",
+        "users",
+        "local"
+      ]
+    },
+    {
+      "file": "sessions/20260520-skills-yang-udah-dibuat--bukan-bawaan-dari-hermes-.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_180714_82755b",
+      "topics": [
+        "hermes",
+        "skills",
+        "skill",
+        "vault",
+        "session"
+      ]
+    },
+    {
+      "file": "sessions/20260520-skills-yang-udah-dibuat--bukan-bawaan-dari-hermes-.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_110608_4c8f01",
+      "topics": [
+        "hermes",
+        "skills",
+        "skill",
+        "vault",
+        "users"
+      ]
+    },
+    {
+      "file": "sessions/20260520-skills-yang-udah-dibuat--bukan-bawaan-dari-hermes-.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_183509_950e9d",
+      "topics": [
+        "hermes",
+        "skills",
+        "skill",
+        "vault",
+        "session"
+      ]
+    },
+    {
+      "file": "sessions/20260520-skills-yang-udah-dibuat--bukan-bawaan-dari-hermes-.md",
+      "date": "2026-05-20",
+      "session_id": "session_20260520_185849_519950",
+      "topics": [
+        "hermes",
+        "skills",
+        "skill",
+        "vault",
+        "users"
+      ]
+    },
+    {
+      "file": "sessions/20260515-live2video-chunking-strategy.md",
+      "date": "2026-05-15",
+      "topics": [
+        "live2video",
+        "chunking"
+      ]
+    },
+    {
+      "file": "sessions/20260515-16-cloakbrowser-copilot-m365-full-series.md",
+      "date": "2026-05-15",
+      "topics": [
+        "cloakbrowser",
+        "copilot",
+        "m365"
+      ]
+    },
+    {
+      "file": "sessions/20260516-hermes-desktop-lm-studio-setup.md",
+      "date": "2026-05-16",
+      "topics": [
+        "hermes-desktop",
+        "lm-studio"
+      ]
+    }
+  ],
+  "concepts": [
+    "skill",
+    "skills",
+    "aionui",
+    "users",
+    "discord",
+    "description",
+    "documents",
+    "chunks",
+    "content",
+    "video",
+    "pipeline",
+    "hermes",
+    "agent",
+    "local",
+    "appdata",
+    "copilot",
+    "m365",
+    "hermes-desktop",
+    "lm-studio",
+    "cloakbrowser",
+    "output",
+    "session-management",
+    "browser",
+    "setup",
+    "live2video",
+    "testing",
+    "scriptor",
+    "class",
+    "error",
+    "hermes-dashboard",
+    "statictext",
+    "generic",
+    "level",
+    "vault",
+    "listitem",
+    "architecture",
+    "sessions",
+    "score",
+    "label",
+    "chunk",
+    "storytime"
+  ],
+  "decisions": [
+    "NOT needed for Copilot M365**",
+    "Reject CloakBrowser for Enterprise",
+    "[[vision-model-selection]] — Nemotron Nano 12B VL ",
+    "** Not adopted — user already building custom vaul",
+    "to build custom instead of using obsidian-wiki",
+    "s/ | people/ | _meta/",
+    "s/            # decisions made (6 files)",
+    "on Cloudflare Tunnel. Successfully set up and test",
+    "Cloudflare Tunnel",
+    "s/people felt thin, especially for May 18 sessions",
+    "s → sessions → detail → raw)",
+    "s, 1 person",
+    "bisa gabung? ngerti ga? well ofcourse semua sessio"
+  ],
+  "people": [
+    {
+      "file": "people/andrej-karpathy.md",
+      "title": "Andrej Karpathy"
+    }
+  ],
+  "skipped_sessions": [
+    {
+      "id": "session_20260513_202905_572495d2",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_acbd3767-db94-4ad0-b8d6-7955710d0877",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_aacd39a9-0e7c-4b33-bf19-e263a051c34c",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_9a302170-40c6-495c-b9e1-d5fadbea04f5",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_945c4182-7dae-4c4b-870f-b1f1802da77b",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260514_063452_115cdd",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260514_070254_21d13e",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_bg_050241_abfc47",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260515_113607_7b0949",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_061608_0c73fd",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_063843_8bb191",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_063910_c474aa",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_063943_959a82",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064210_b2b441",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064249_5e3017",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064646_c8e8e9",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064840_6c8edb",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064930_0e6d76",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_065241_9c4da2",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260518_060356_8582e92c",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_cron_577b3b8659e7_20260518_120347",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260518_123014_9b7e9954",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260518_123707_53a58a61",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260518_123822_a68d3925",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260519_200436_6434ab",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260513_202905_572495d2",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_acbd3767-db94-4ad0-b8d6-7955710d0877",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_aacd39a9-0e7c-4b33-bf19-e263a051c34c",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_9a302170-40c6-495c-b9e1-d5fadbea04f5",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_945c4182-7dae-4c4b-870f-b1f1802da77b",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260514_063452_115cdd",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260514_070254_21d13e",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_bg_050241_abfc47",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260515_113607_7b0949",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_061608_0c73fd",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_063843_8bb191",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_063910_c474aa",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_063943_959a82",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064210_b2b441",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064249_5e3017",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064646_c8e8e9",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064840_6c8edb",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_064930_0e6d76",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260516_065241_9c4da2",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260518_060356_8582e92c",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_cron_577b3b8659e7_20260518_120347",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260518_123014_9b7e9954",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260518_123707_53a58a61",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260518_123822_a68d3925",
+      "reason": "trivial"
+    },
+    {
+      "id": "session_20260519_200436_6434ab",
+      "reason": "trivial"
+    }
+  ],
+  "processed_sessions": [
+    "session_faf613c3-10b5-42d9-862d-5a1a154a3ca7",
+    "session_257a78ce-d763-413d-8626-875ba55785b4",
+    "session_f989184f-9733-48c2-b500-981ca027265d",
+    "session_20260514_075548_e97328",
+    "session_41074997-b756-47e7-b8c1-40a4d2b9006b",
+    "session_20260514_081236_82433b",
+    "session_20260514_082620_06bece",
+    "session_20260514_083636_de88e5",
+    "session_20260514_085509_2e3068",
+    "session_20260514_090128_1d6118",
+    "session_20260514_091920_0be788",
+    "session_20260514_092927_661bd0",
+    "session_20260514_094653_d4c48f",
+    "session_20260514_094552_ee2b7c",
+    "session_20260514_101205_67739e",
+    "session_20260514_101721_5660b8",
+    "session_20260514_104054_586b73",
+    "session_20260514_104644_904f13",
+    "session_20260514_112036_116108",
+    "session_20260514_113100_e455bb",
+    "session_20260514_122637_26c32d",
+    "session_20260514_130411_bc01d0",
+    "session_20260514_125749_b80e1c",
+    "session_20260514_134044_0c0f19",
+    "session_20260514_141846_b45a07",
+    "session_20260514_151047_5da3f6",
+    "session_20260514_080313_45302b",
+    "session_20260514_164804_cb77b4",
+    "session_20260514_172148_cfbf8d",
+    "session_20260514_185312_fa4b5e",
+    "session_20260514_193558_190ce1",
+    "session_20260514_220110_4f5ee2",
+    "session_20260515_045228_993abbf4",
+    "session_20260515_050241_238bd6",
+    "session_20260515_052451_439848",
+    "session_20260515_064210_6f48de",
+    "session_20260515_073419_76d3df66",
+    "session_20260515_111308_9b353490",
+    "session_20260515_121453_696d87",
+    "session_20260515_192028_c55b61",
+    "session_20260515_195540_f2100e",
+    "session_20260515_211817_a1c10d",
+    "session_20260516_055701_f2c3b4",
+    "session_20260516_070153_03f116",
+    "session_20260516_074620_6f1cf8",
+    "session_20260516_080203_0958bc",
+    "session_20260516_080313_1376c7",
+    "session_20260516_074919_24fdcc",
+    "session_20260516_080250_e7f174",
+    "session_20260516_080545_e7cc36",
+    "session_20260516_081500_eecdbc",
+    "session_20260516_083819_19338c",
+    "session_20260516_083253_a5839f",
+    "session_20260516_091547_868e7a",
+    "session_20260516_095700_878c38",
+    "session_20260516_095404_fc824f",
+    "session_20260516_101951_0729e5",
+    "session_20260516_104440_e27c9b",
+    "session_20260516_194454_0d4c87",
+    "session_20260517_045609_bd4738",
+    "session_20260517_064116_d20e7a",
+    "session_20260517_065512_af9eef",
+    "session_20260517_072358_13faf9",
+    "session_20260514_151941_53c8b5",
+    "session_20260515_182711_f2f3dc",
+    "session_20260517_080634_ca6091",
+    "session_20260517_081135_d6d939",
+    "session_20260517_082609_d59cc5",
+    "session_20260517_093701_4a966e",
+    "session_20260517_101529_dd8116",
+    "session_20260517_102333_35c075",
+    "session_20260517_110322_767eb1",
+    "session_20260517_122625_013605",
+    "session_20260517_132345_d863b4",
+    "session_20260517_133734_5cc347",
+    "session_20260517_153648_a778d7",
+    "session_20260517_090851_060c8d",
+    "session_20260517_165137_810f93",
+    "session_20260517_175302_9bf494",
+    "session_20260517_181330_c03adf",
+    "session_20260517_185851_a116d3",
+    "session_20260517_191924_a2994a",
+    "session_20260517_200438_787cb4",
+    "session_20260517_204504_fad53b",
+    "session_20260517_163025_9c2c63",
+    "session_20260517_234715_c939e7",
+    "session_20260517_233528_84bcf2",
+    "session_20260518_022514_020a94",
+    "session_20260518_030538_09661b",
+    "session_20260518_033808_7282d4",
+    "session_20260518_063119_3b4574",
+    "session_20260518_061437_f2e056d3",
+    "session_20260518_103753_992adc",
+    "session_cron_577b3b8659e7_20260518_180522",
+    "session_20260518_204128_4d1236",
+    "session_20260518_001332_0a5f19",
+    "session_20260518_213332_7575f6",
+    "session_20260518_205144_df9b4c",
+    "session_20260518_215947_29bccc",
+    "session_20260519_051440_071105",
+    "session_20260519_211005_0ee8c0",
+    "session_20260519_213309_2ac04f",
+    "session_20260520_051808_5ea3b1",
+    "session_20260519_200643_2abe4e",
+    "session_20260520_083322_3ccf28",
+    "session_20260520_084639_047095",
+    "session_20260520_100733_a26fc2",
+    "session_20260520_095721_bcdd70",
+    "session_20260520_103241_5de955",
+    "session_20260520_074253_4a8ec6",
+    "session_20260520_113955_c0b77d",
+    "session_20260520_120626_e6cd7e",
+    "session_20260520_123046_762275",
+    "session_20260520_174146_c365b5",
+    "session_20260520_180714_82755b",
+    "session_20260520_110608_4c8f01",
+    "session_20260520_183509_950e9d",
+    "session_20260520_185849_519950"
+  ],
+  "counts": {
+    "sessions": 121,
+    "concepts": 41,
+    "decisions": 13,
+    "people": 0
+  }
+}
