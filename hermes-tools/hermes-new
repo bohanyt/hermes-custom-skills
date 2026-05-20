@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# hermes-new
+# Spawn a new Hermes terminal with interactive API key input.
+# Usage: hermes-new [instance_name]
+#
+# What it does:
+#   1. Asks for API key (or reads from argument)
+#   2. Opens a new terminal window
+#   3. In the new terminal: sets API key, acquires DB lock, starts Hermes
+#   4. On exit: releases lock automatically
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+INSTANCE="${1:-session-$(date +%H%M%S)}"
+
+echo "========================================="
+echo "  Hermes New Session"
+echo "  Instance: $INSTANCE"
+echo "========================================="
+echo ""
+
+# Ask for API key
+echo -n "Paste API key (or press Enter to use existing \$OPENROUTER_API_KEY): "
+read -r API_KEY
+echo ""
+
+if [ -z "$API_KEY" ]; then
+    API_KEY="${OPENROUTER_API_KEY:-}"
+    if [ -z "$API_KEY" ]; then
+        echo "No API key provided and \$OPENROUTER_API_KEY is not set."
+        echo "Please set your API key first:"
+        echo "  export OPENROUTER_API_KEY=sk-or-v1-..."
+        exit 1
+    fi
+    echo "Using existing \$OPENROUTER_API_KEY (${API_KEY:0:12}...)"
+fi
+
+echo ""
+echo "[*] Opening new terminal for '$INSTANCE'..."
+echo "[*] DB lock will be acquired automatically."
+echo ""
+
+# Build the command that runs in the NEW terminal
+# Detect hermes location and ensure it's in PATH
+NEW_TERMINAL_CMD="echo '=== Hermes Session: $INSTANCE ==='; echo 'API Key: ${API_KEY:0:12}...'; echo ''; export OPENROUTER_API_KEY='${API_KEY}'; HERMES_BIN=\$(which hermes 2>/dev/null || echo 'hermes'); if [ -f '${SCRIPT_DIR}/hermes-session-lock.sh' ]; then bash '${SCRIPT_DIR}/hermes-session-lock.sh' lock '$INSTANCE' && trap 'bash ${SCRIPT_DIR}/hermes-session-lock.sh unlock $INSTANCE 2>/dev/null' EXIT INT TERM; fi; echo '[*] Lock acquired. Starting Hermes...'; echo '[*] Press Ctrl+C to stop. Lock will release automatically.'; echo ''; \"\$HERMES_BIN\";"
+
+# Detect terminal emulator and launch
+if command -v mintty &>/dev/null; then
+    # MSYS2 / Git Bash default
+    mintty -t "Hermes: $INSTANCE" -- bash -c "$NEW_TERMINAL_CMD" &
+elif command -v xterm &>/dev/null; then
+    xterm -title "Hermes: $INSTANCE" -e "bash -c '$NEW_TERMINAL_CMD'" &
+elif command -v gnome-terminal &>/dev/null; then
+    gnome-terminal --title="Hermes: $INSTANCE" -- bash -c "$NEW_TERMINAL_CMD" &
+elif command -v konsole &>/dev/null; then
+    konsole --title "Hermes: $INSTANCE" -e "bash -c '$NEW_TERMINAL_CMD'" &
+else
+    # Windows fallback: use cmd.exe to start new window
+    # Convert MSYS path to Windows path for cmd.exe
+    WIN_SCRIPT_DIR=$(cygpath -w "$SCRIPT_DIR" 2>/dev/null || echo "$SCRIPT_DIR")
+    cmd.exe /c start "Hermes: $INSTANCE" bash -c "$NEW_TERMINAL_CMD" &
+fi
+
+LAUNCH_PID=$!
+echo "[*] New terminal launched (PID: $LAUNCH_PID)"
+echo "[*] Instance: $INSTANCE"
+echo "[*] DB: shared (with lock/queue)"
+echo ""
+echo "To check lock status: bash ${SCRIPT_DIR}/hermes-session-lock.sh status"
