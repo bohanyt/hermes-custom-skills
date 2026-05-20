@@ -1,55 +1,56 @@
 ---
 name: vault-update
-description: Update the Hermes Vault with knowledge from the current session. Extract topics, decisions, concepts, and write to vault. Run at end of session or when user says "simpen" or "save to vault".
+description: Update the Hermes Vault with knowledge from the current session. Extract topics, decisions, concepts, and write to vault. Run at end of session or when user says "simpen" or "save to vault". Now includes AUTOMATED scripts.
 ---
 
 # Vault Update
 
 ## When to Use
-
 - End of session (auto-trigger when session is wrapping up)
 - User says "simpen", "save to vault", "update vault"
 - Significant new knowledge was created (decisions, concepts, discoveries)
 
 ## Config
+- Vault path: `C:\Users\<user>\Documents\hermes-vault\`
+- Sessions path: `C:\Users\<user>\AppData\Local\hermes\sessions\`
 
-- Vault path: `C:\Users\MSI Thin 15\Documents\hermes-vault\`
+## Automated Scripts
 
-## Update Flow
+Scripts ada di `scripts/` folder (portable, standalone):
 
-1. **Extract** from current session:
+| Script | Purpose | Usage |
+|--------|---------|-------|
+| `vault_update.py` | Auto-extract sessions → vault | `python vault_update.py [--dry-run]` |
+| `vault_concepts.py` | Extract concepts & decisions dari sessions | `python vault_concepts.py [--dry-run]` |
+
+### Quick Run
+```bash
+# Update vault dari session files
+python scripts/vault_update.py
+
+# Extract concepts & decisions
+python scripts/vault_concepts.py
+
+# Dry run (preview only)
+python scripts/vault_update.py --dry-run
+```
+
+### Cron Job (Auto-ingest)
+Untuk auto-ingest setiap 2 jam:
+```
+hermes cron create --schedule "every 2h" --prompt "Run: python ~/Documents/hermes-vault/scripts/vault_update.py"
+```
+
+## Manual Update Flow (kalau nggak pake script)
+
+1. **Extract** dari current session:
    - Main topics discussed
    - Decisions made
    - New concepts/ideas introduced
    - People mentioned
    - Action items
 
-2. **Write session summary** to `sessions/YYYY-MM-DD-session-slug.md`:
-   ```markdown
-   ---
-   title: Session Title
-   date: YYYY-MM-DD
-   model: model-name
-   tags: [session, topic1, topic2]
-   ---
-   
-   ## Summary
-   2-3 sentence summary of the session.
-   
-   ## Topics
-   - Topic 1: brief description
-   - Topic 2: brief description
-   
-   ## Decisions
-   - Decision 1: context + outcome
-   
-   ## Concepts
-   - [[concept-name]]: brief definition
-   
-   ## Action Items
-   - [ ] Item 1
-   - [ ] Item 2
-   ```
+2. **Write session summary** to `sessions/YYYY-MM-DD-session-slug.md`
 
 3. **Update/create concept files** in `concepts/` if new concepts emerged
 
@@ -62,15 +63,12 @@ description: Update the Hermes Vault with knowledge from the current session. Ex
 7. **Update .manifest.json** — increment counts, add session entry, update timestamp
 
 ## Concurrency Safety
-
 - Each session writes its own file (no overwrites)
 - Use append for index.md updates
 - Check for `.lock` file before writing; if exists, wait 2s and retry
-- Create `.lock` → write → remove `.lock`
 
 ## File Naming
-
-- Sessions: `YYYY-MM-DD-session-slug.md` (e.g., `2026-05-17-vault-setup.md`)
-- Concepts: `concept-name.md` (e.g., `rag-pattern.md`)
-- Decisions: `decision-name.md` (e.g., `vault-path-decision.md`)
-- People: `person-name.md` (e.g., `andrej-karpathy.md`)
+- Sessions: `YYYY-MM-DD-session-slug.md`
+- Concepts: `concept-name.md`
+- Decisions: `decision-name.md`
+- People: `person-name.md`
