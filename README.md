@@ -1,70 +1,80 @@
 # Hermes Custom Skills
 
-Custom skills untuk [Hermes Agent](https://hermes-agent.nousresearch.com/docs) — dibuat oleh @bohan.
+Custom skills untuk [Hermes Agent](https://hermes-agent.nousresearch.com/docs) — dibuat & dikumpulkan oleh @bohan.
 
-## Daftar Skills (21 custom + scripts)
+## Daftar Skills (18 skills + scripts)
 
 ### Pipeline & Content Factory
-- **content-pipeline-builder** — Arsitektur multi-agent content pipeline
-- **hermes-python-pipeline** — Python script patterns, VTT parsing, chunking
-- **live2video-pipeline** — YouTube livestream → short clips (v1.3)
-  - `scripts/` — 22 Python scripts + 17 outdated versions (portable, no API key needed)
+| Skill | Description |
+|-------|-------------|
+| **content-pipeline-builder** | Arsitektur multi-agent content pipeline |
+| **hermes-python-pipeline** | Python script patterns, VTT parsing, chunking |
+| **live2video-pipeline** | YouTube livestream → short clips (v1.3) |
+| `live2video-pipeline/scripts/` | 22 Python scripts + 17 outdated versions (portable, no API key needed) |
 
 ### Hermes Operations
-- **hermes-multi-session** — Multi-terminal manager, lock/queue, shared DB/vault
-- **hermes-save-session** — Force-save session DB, WAL flush
-- **hermes-fix-session-index** — Fix unindexed CLI sessions bug
-- **hermes-tools/** — Shell scripts untuk multi-session setup
+| Skill | Description |
+|-------|-------------|
+| **hermes-multi-session** | Multi-terminal manager, lock/queue, shared DB/vault |
+| `hermes-multi-session/references/` | Shell scripts (lock, safe, multi-launch, save, session-DB docs) |
 
 ### Vault System
-- **vault-query** — Query vault sebelum jawab pertanyaan
-- **vault-update** — Write session knowledge ke vault
-- **vault-session-capture** — Auto-extract knowledge di akhir session
-- **vault-management** — Umbrella + audit workflow
+| Skill | Description |
+|-------|-------------|
+| **vault-query** | Query vault sebelum jawab pertanyaan |
+| **vault-update** | Write session knowledge ke vault |
+| **vault-session-capture** | Auto-extract knowledge di akhir session |
+| **vault-management** | Umbrella + audit workflow |
 
 ### Content Processing
-- **storytime-pipeline** — SRT chunking + keyword-based topic labeling
-- **context-delegation** — Context window overload handling
+| Skill | Description |
+|-------|-------------|
+| **storytime-pipeline** | SRT chunking + keyword-based topic labeling |
+| **context-delegation** | Context window overload handling |
 
 ### Communication
-- **caveman** — Ultra-compressed communication mode (~75% token reduction)
-- **handoff** — Compact conversation untuk agent handoff
+| Skill | Description |
+|-------|-------------|
+| **caveman** | Ultra-compressed communication mode (~75% token reduction) |
+| **handoff** | Compact conversation untuk agent handoff |
 
 ### Code & Architecture
-- **improve-codebase-architecture** — Find deepening opportunities
-- **zoom-out** — Give broader code context
-- **grill-me** — Interview user relentlessly about plans
+| Skill | Description |
+|-------|-------------|
+| **improve-codebase-architecture** | Find deepening opportunities (deep/shallow modules, deletion test) |
+| **grill-me** | Interview user relentlessly about plans |
 
-### Enterprise
-- **browser-automation-enterprise** — M365/Teams browser automation
+### Enterprise Automation
+| Skill | Description |
+|-------|-------------|
+| **browser-automation-enterprise** | M365/Teams browser automation, Playwright patterns |
 
-### Security & Review (new)
-- **security-audit** — OWASP Top 10 + STRIDE security audit (from gstack /cso)
-- **retro** — Weekly engineering retrospective (from gstack /retro)
-- **ship** — End-to-end shipping workflow, auto PR (from gstack /ship)
+### Security & DevOps (adapted from [gstack](https://github.com/garrytan/gstack))
+| Skill | Description |
+|-------|-------------|
+| **security-audit** | OWASP Top 10 + STRIDE threat modeling |
+| **retro** | Weekly engineering retrospective |
+| **ship** | End-to-end shipping workflow, auto PR |
+
+### Publishing
+| Skill | Description |
+|-------|-------------|
+| **gitpush** | Push custom skills to GitHub repo for sharing |
 
 ## Struktur Folder
 
 ```
-hermes-skills-export/
+hermes-custom-skills/
 +-- live2video-pipeline/
 |   +-- SKILL.md              # Pipeline documentation
 |   +-- scripts/              # 22 active Python scripts (standalone)
-|   |   +-- pipeline_runner.py      # Entry point / orchestrator
-|   |   +-- srt_cleaner.py          # Bersihkan SRT
-|   |   +-- topic_chunker.py        # Chunk + label transkrip
-|   |   +-- pipeline_cutter.py      # Cut video per label
-|   |   +-- storytime_scanner.py    # Scan storytime (standalone)
-|   |   +-- storytime_keywords.json # Config keyword
-|   |   +-- ... (16 lagi)
 |   +-- outdated/             # 17 old versions (reference)
 +-- storytime-pipeline/
 |   +-- SKILL.md
 |   +-- scripts/topic_chunker.py
 +-- hermes-multi-session/
 |   +-- SKILL.md
-|   +-- references/ (6 shell scripts + docs)
-+-- hermes-tools/             # Multi-session shell scripts
+|   +-- references/           # Shell scripts + docs
 +-- vault-query/              # SKILL.md only
 +-- vault-update/             # SKILL.md only
 +-- vault-session-capture/    # SKILL.md only
@@ -75,26 +85,43 @@ hermes-skills-export/
 +-- grill-me/                 # SKILL.md only
 +-- handoff/                  # SKILL.md only
 +-- improve-codebase-architecture/ # SKILL.md only
-+-- zoom-out/                 # SKILL.md only
 +-- browser-automation-enterprise/ # SKILL.md + 5 refs + 1 template
++-- gitpush/                  # SKILL.md (new!)
++-- retro/                    # SKILL.md (from gstack)
++-- security-audit/           # SKILL.md (from gstack)
++-- ship/                     # SKILL.md (from gstack)
 +-- README.md
-+-- SKILLS_AUDIT.md           # Audit report (duplikat, maturity)
-+-- MATURITY_REPORT.md        # Maturity analysis
++-- .gitignore
++-- LICENSE
 ```
 
 ## Cara Pakai
 
-Setiap folder berisi `SKILL.md` (utama) + optional `scripts/`, `references/`, `templates/`.
+### Install ke Hermes lain
 
-Untuk install ke Hermes lain:
 ```bash
-# Copy skill folder ke Hermes skills directory
+# Via git clone (recommended)
+git clone https://github.com/bohanyt/hermes-custom-skills.git
+cd hermes-custom-skills
+
+# Copy skill(s) ke Hermes skills directory
 cp -r <skill-name> ~/.hermes/skills/
-# atau
+# Windows:
 cp -r <skill-name> ~/AppData/Local/hermes/skills/
 ```
 
-Untuk pipeline scripts (standalone, tanpa Hermes):
+### Install semua sekaligus
+
+```bash
+# Linux/Mac:
+cp -r */ ~/.hermes/skills/
+
+# Windows (PowerShell):
+Get-ChildItem -Directory | Copy-Item -Destination "$env:APPDATA\Local\hermes\skills\" -Recurse
+```
+
+### Pipeline scripts (standalone, tanpa Hermes)
+
 ```bash
 cd live2video-pipeline/scripts
 python pipeline_runner.py video.mp4 stream.id.srt
@@ -107,21 +134,12 @@ python pipeline_runner.py video.mp4 stream.id.srt
 | PRODUCTION | 9 | Tested, real output, daily driver |
 | FUNCTIONAL | 5 | Works but partial/untested |
 | REFERENCE | 4 | SOP/documentation only |
-| STUB | 1 | zoom-out (minimal) |
-
-Lihat `MATURITY_REPORT.md` untuk detail.
-
-## Upload Plan (TODO)
-
-- [ ] Buat GitHub repo (private atau public)
-- [ ] `git init` + initial commit
-- [ ] Push ke GitHub
-- [ ] Setup sync script untuk update otomatis
 
 ## Catatan
 
 - Semua scripts **standalone** — bisa jalan tanpa Hermes
 - Tidak ada API key di files (`.env` di-gitignore)
 - Pipeline scripts tested on: GTA Anime NTE stream (2 jam → 40 chunks → storytime detected)
-- `hermes-tools/` untuk Windows/MSYS environment
 - Vault-related skills dependen pada Hermes Vault setup di `Documents/hermes-vault/`
+- `security-audit`, `retro`, `ship` adapted dari [gstack](https://github.com/garrytan/gstack) oleh Garry Tan
+- `gitpush` — **unique skill**, nggak ada di Hermes default. Push skills ke GitHub langsung dari Hermes
